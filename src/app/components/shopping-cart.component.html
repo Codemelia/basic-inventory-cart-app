@@ -1,0 +1,10 @@
+<table class="shopping-cart">
+    @for (li of lineItems; let idx = $index; track li) {
+        <tr>
+            <td><img src={{li.image}} alt="Added Item"></td>
+            <td>{{li.item}}</td>
+            <td>{{li.quantity}}</td>
+            <td><button type="button" (click)="remove($event)">REMOVE</button></td>
+        </tr>
+    }
+</table>

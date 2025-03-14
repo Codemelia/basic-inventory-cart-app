@@ -1,0 +1,12 @@
+<div class="container">
+ <div class="select">
+    <h1>Please Select</h1>
+    <app-inventory (lineItemAdded)="onLineItemAdded($event)"></app-inventory>
+  </div>
+
+  <div class="cart">
+    <h1>My Cart</h1>
+    <app-shopping-cart [lineItems]="lineItems"
+      (lineItemRemoved)="onLineItemRemoved($event)"></app-shopping-cart>
+  </div>
+</div>

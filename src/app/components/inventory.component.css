@@ -1,0 +1,17 @@
+.inventory, .inventory td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.inventory tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.inventory td {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+}
